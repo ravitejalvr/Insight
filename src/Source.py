@@ -8,7 +8,7 @@ import sys
 This Function get_indexes taken in the first row of the data (index) as input and gives out
 the indexes pertaining to name,cost,last name and first name.
 """
-def get_indexes(index):   
+def get_indices(index):   
     index = index.strip().split(',')
     nm_ind = 0;
     cost_ind = 0;
@@ -68,7 +68,7 @@ else:
     sys.exit('Given Input Folder Does not Exist')
 index = data[0]
 
-name_index,cost_index,firstname_index,lastname_index = get_indexes(index)
+name_index,cost_index,firstname_index,lastname_index = get_indices(index)
 drug_name,drug_cost = get_Dict(data,name_index,cost_index,lastname_index,firstname_index)
 create_csv(drug_name,drug_cost)
 
