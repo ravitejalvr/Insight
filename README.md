@@ -15,3 +15,6 @@ I have used sys library to exit the program if the path doesn't exist, take argu
 * Using a dict automatically eliminated duplicates in the data and hence I need not worry about it.
 * For generating final output file, I used the csv library and create one line for each drug (create_csv Function)
 * I checked the file in the input trajectory using glob function and exited if path doesn't exist.
+
+# Note:
+This assignment was done on Windows OS and hence, if you will be using a different names, the path names should be changed accordingly.
